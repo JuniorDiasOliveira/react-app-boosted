@@ -8,25 +8,25 @@ const questions = [
     validate: (value) => !!value
   },
   {
-    name: 'redux',
+    name: '_redux',
     type: 'confirm',
     message: 'Will you need redux?',
     validate: (value) => !!value
   },
   {
-    name: 'auth',
+    name: '_auth',
     type: 'confirm',
     message: 'Will you need authentication?',
     validate: (value) => !!value
   },
   {
-    name: 'routes',
+    name: '_routes',
     type: 'confirm',
     message: 'Will you need routes?',
     validate: (value) => !!value
   },
   {
-    name: 'materialui',
+    name: '_materialui',
     type: 'confirm',
     message: 'Do you want to use material UI?',
     validate: (value) => !!value

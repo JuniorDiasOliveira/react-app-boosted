@@ -10,4 +10,7 @@ clear()
 
 console.log(chalk.yellow(figlet.textSync('junior', { horizontalLayout: 'full' })))
 
-execInquirer().then(executeScripts)
+execInquirer().then(choices => {
+  const chosenOnes = Object.keys(choices).filter(x => !!choices[x] && choices[x] !== 'name')
+  executeScripts(choices.name, chosenOnes)
+})

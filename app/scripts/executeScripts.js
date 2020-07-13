@@ -1,23 +1,20 @@
 import shell from 'shelljs'
+import scriptList from './installers/index'
+
 const path = process.cwd()
 
-export const executeScripts = ({ name, redux, auth, routes, materialUI }) => {
-  if (shell.exec(defaultScripts(name).modules).code === 0) {
+export const executeScripts = (name, chosenOnes) => {
+  const { defaultScript, scripts } = scriptList()
+  if (shell.exec(defaultScript(name).modules).code === 0) {
     const commands = [`cd ${path}/${name} &&`, 'yarn add']
     const extras = ['&&']
 
-    if (redux) {
-      const { modules, extraCommands } = reduxScripts()
+    chosenOnes.forEach(name => {
+      const { modules, extraCommands } = scripts[name]
       commands.push(modules)
       extras.push(extraCommands || '')
-    }
-
-    if (routes) {
-      const { modules, extraCommands } = routesScripts()
-      commands.push(modules)
-      extras.push(extraCommands || '')
-    }
-
-    return shell.exec(commands.concat(extras).join(' ')).code
+    })
+    console.log(commands, extras)
+    return ''
   }
 }
