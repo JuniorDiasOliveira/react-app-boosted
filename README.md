@@ -1,5 +1,6 @@
-# React App Boosted
-## Easy way to start projects 🚀
+# React App Boosted 🚀
+
+## Easy way to start projects 
 
 React App Boosted is a tiny command-line application which uses the power of NodeJS and script execution to create customized projects from the scratch.  
 All installing executions are executed directly on the terminal.
@@ -8,13 +9,18 @@ All installing executions are executed directly on the terminal.
 
 Indicated to people who makes many small projects on a short period of time.
 
+## Prerequisites
+You only needs to have `yarn` installed
+
 ## Installation
 `npm install -g react-app-boosted`  
+
 or  
+
 `npx react-app-boosted`
 
 ## How to use  
-After installing you can just execute the module:  
+After installed you can just execute the module:  
 `> react-app-boosted`
 
 Some questions will be prompted to you in order to accomplish the type of project you want to start :)
