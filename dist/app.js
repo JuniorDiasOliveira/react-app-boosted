@@ -14,7 +14,7 @@ var _executeScripts = require("./scripts/executeScripts");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 (0, _clear["default"])();
-console.log(_chalk["default"].yellow(_figlet["default"].textSync('C R Boosted ', {
+console.log(_chalk["default"].yellow(_figlet["default"].textSync('R A Boosted ', {
   horizontalLayout: 'full'
 })));
 (0, _inquirer.execInquirer)().then(function (choices) {
