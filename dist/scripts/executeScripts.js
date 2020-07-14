@@ -13,23 +13,24 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 
 var path = process.cwd();
 
-var executeScripts = function executeScripts(name, chosenOnes) {
+var executeScripts = function executeScripts(projectName, chosenOnes) {
   var _scriptList = (0, _index["default"])(),
       defaultScript = _scriptList.defaultScript,
       scripts = _scriptList.scripts;
 
-  if (_shelljs["default"].exec(defaultScript(name).modules).code === 0) {
-    var commands = ["cd ".concat(path, "/").concat(name, " &&"), 'yarn add'];
-    var extras = ['&&'];
-    chosenOnes.forEach(function (name) {
-      var _scripts$name = scripts[name],
-          modules = _scripts$name.modules,
-          extraCommands = _scripts$name.extraCommands;
+  var commands = ["cd ".concat(path, "/").concat(projectName, " &&"), 'yarn add'];
+  var extras = ['&&'];
+
+  if (_shelljs["default"].exec(defaultScript(projectName).modules).code === 0) {
+    chosenOnes.forEach(function (scriptName) {
+      var _scripts$scriptName = scripts[scriptName](),
+          modules = _scripts$scriptName.modules,
+          extraCommands = _scripts$scriptName.extraCommands;
+
       commands.push(modules);
       extras.push(extraCommands || '');
     });
-    console.log(commands, extras);
-    return '';
+    return _shelljs["default"].exec(commands.concat(extras).join(' '));
   }
 };
 

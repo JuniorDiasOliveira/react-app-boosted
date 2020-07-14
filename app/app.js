@@ -8,9 +8,9 @@ import { executeScripts } from './scripts/executeScripts'
 
 clear()
 
-console.log(chalk.yellow(figlet.textSync('junior', { horizontalLayout: 'full' })))
+console.log(chalk.yellow(figlet.textSync('R A Boosted ', { horizontalLayout: 'full' })))
 
 execInquirer().then(choices => {
-  const chosenOnes = Object.keys(choices).filter(x => !!choices[x] && choices[x] !== 'name')
+  const chosenOnes = Object.keys(choices).filter(x => !!choices[x] && x !== 'name')
   executeScripts(choices.name, chosenOnes)
 })

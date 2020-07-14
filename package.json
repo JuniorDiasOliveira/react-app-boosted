@@ -1,11 +1,11 @@
 {
-  "name": "cli-react-features",
-  "version": "1.0.0",
+  "name": "create-react-boosted",
+  "version": "1.0.0-alpha.1",
   "main": "./app/app.js",
-  "author": "junior",
+  "author": "Junior Oliveira",
   "license": "MIT",
   "bin": {
-    "junior": "./dist/app.js"
+    "react-app-boosted": "./dist/app.js"
   },
   "scripts": {
     "server": "node ./dist/app",

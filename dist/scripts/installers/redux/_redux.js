@@ -7,7 +7,7 @@ exports._redux = void 0;
 
 var _redux = function _redux() {
   return {
-    modules: 'redux react redux',
+    modules: 'redux react-redux',
     extraCommands: null
   };
 };

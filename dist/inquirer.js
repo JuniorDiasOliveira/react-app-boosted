@@ -31,14 +31,14 @@ var questions = [{
     return !!value;
   }
 }, {
-  name: '_routes',
+  name: '_router',
   type: 'confirm',
   message: 'Will you need routes?',
   validate: function validate(value) {
     return !!value;
   }
 }, {
-  name: '_materialui',
+  name: '_materialUi',
   type: 'confirm',
   message: 'Do you want to use material UI?',
   validate: function validate(value) {

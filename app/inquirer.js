@@ -20,13 +20,13 @@ const questions = [
     validate: (value) => !!value
   },
   {
-    name: '_routes',
+    name: '_router',
     type: 'confirm',
     message: 'Will you need routes?',
     validate: (value) => !!value
   },
   {
-    name: '_materialui',
+    name: '_materialUi',
     type: 'confirm',
     message: 'Do you want to use material UI?',
     validate: (value) => !!value
