@@ -31,5 +31,5 @@ Some questions will be prompted to you in order to accomplish the type of projec
 
 
 ## Licence
-CAB is Copyright (c) 2020 Junior Oliveira and licensed under the MIT licence. All rights not explicitly granted in the MIT license are reserved. See the included LICENSE file for more details.
+React App Boosted is Copyright (c) 2020 Junior Oliveira and licensed under the MIT licence. All rights not explicitly granted in the MIT license are reserved. See the included LICENSE file for more details.
 
