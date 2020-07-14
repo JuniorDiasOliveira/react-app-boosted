@@ -20,6 +20,10 @@ You only needs to have `yarn` installed
 
 or  
 
+`yarn --global add react-app-boosted`  
+
+or
+
 `npx react-app-boosted`
 
 ## How to use  
