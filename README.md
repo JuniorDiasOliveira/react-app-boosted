@@ -1,4 +1,7 @@
-# React App Boosted 🚀
+# React App Boosted 🚀  
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/JuniorDiasOliveira/react-app-boosted/blob/master/LICENSE) 
+[![npm version](https://img.shields.io/npm/v/create-react-boosted.svg?style=flat)](https://www.npmjs.com/package/react-app-boosted)
+[![npm version](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)]()
 
 ## Easy way to start projects 
 
